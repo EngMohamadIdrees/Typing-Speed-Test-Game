@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <p>Typing Speed Test Game</p>
+    </header>
+    <div class="container">
+        <div class="game-info">
+            <p>You Are Playing On
+                <select id="select">
+                    <option value="Easy">Easy</option>
+                    <option value="Normal">Normal</option>
+                    <option value="Hard">Hard</option>
+                </select>
+                <span class="level"></span> Level<br> & You Have <span class="time"></span>
+                Seconds To Type
+                The Word
+            </p>
+        </div>
+        <span class="start-game">Start Playing</span>
+        <div class="the-word">
+        </div>
+        <input type="text" class="input">
+        <div class="next-words">
+            Words Will Show Here
+        </div>
+        <div class="user-info">
+            <p class="time-left">Time Left: <span class="time"></span> Seconds</p>
+            <p class="the-score">Score: <span class="user-score">0</span> From <span class="game-score">3</span></p>
+        </div>
+        <div class="finish"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

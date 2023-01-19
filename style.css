@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --main-color:#2196f3;
+    --main-margin:10px
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+}
+header{
+    width: 100%;
+    padding: 10px;
+    height: fit-content;
+    text-align: center;
+    background-color: var(--main-color)
+}
+header p{
+    font-size: 25px;
+    margin: 0;
+    font-weight: bold;
+    color: white
+}
+.container{
+    margin: var(--main-margin) auto;
+    width: 800px;
+    text-align: center;
+}
+@media (max-width:700px)
+{
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+    }
+}
+.container .game-info{
+    background-color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+}
+.container .game-info p {
+    font-size: 15px;
+    line-height: 2;
+}
+.container .game-info select{
+    color: red;
+}
+.container .game-info .level,
+.container .game-info .time{
+    color: red;
+}
+.container .start-game{
+    width: 100%;
+    cursor: pointer;
+    background-color: red;
+    color:white;
+    display: block;
+    margin: var(--main-margin) auto;
+    padding: 10px;
+    font-size: 25px;
+}
+.container .the-word{
+    margin: var(--main-margin) auto;
+    user-select: none;
+}
+.container .the-word span{
+    color: var(--main-color);
+    font-size: 80px;
+    font-weight: bold;
+}
+input{
+    margin: var(--main-margin) 0px;
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 4px;
+    outline: none;
+    border: 3px solid var(--main-color);
+    text-align: center;
+    display: none;
+}
+.next-words{
+    margin: var(--main-margin) auto;
+    padding: 10px;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: center;
+}
+.next-words span{
+    background-color: var(--main-color);
+    color :white;
+    padding: 5px;
+    margin: 4px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.user-info{
+    background-color: white;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user-info .time-left{
+    flex: 1;
+    text-align: left;
+}
+.user-info .the-score {
+    flex: 1;
+    text-align: right;
+}
+.user-info span{
+    color: red;
+}
+.finish{
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    padding: 15px;
+}
+.finish .good {
+    color: var(--main-color);
+}
+
+.finish .bad {
+    color: red;
+}
